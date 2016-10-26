@@ -1,12 +1,12 @@
-import React from 'react'
-import { Flex } from 'reflexbox'
+import React from 'react';
+import { Flex } from 'reflexbox';
 
-import Head from './Head'
-import Main from './Main'
-import Footer from './Footer'
+import Head from './Head';
+import Main from './Main';
+import Footer from './Footer';
 
 const App = () => (
-  <html>
+  <html lang="en">
     <Head title="Jordan Hornblow | Developer" />
     <body>
       <Flex column style={{ height: '100%' }}>
