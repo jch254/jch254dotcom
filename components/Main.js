@@ -18,7 +18,7 @@ const Main = () => (
         |
       </Heading>
       <HeadingLink size={2} style={{ textAlign: 'center' }} href="mailto:jordan@jch254.com">
-        Contact
+        Contact/Hire
       </HeadingLink>
     </Flex>
   </Flex>
