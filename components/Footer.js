@@ -10,7 +10,7 @@ const Footer = () => (
   <Box style={{ flex: 'none' }}>
     <Toolbar backgroundColor="black">
       <Space auto />
-      <NavItem color="midgray" href="https://603.nu">
+      <NavItem color="midgray" href="https://603.nu" style={{ fontWeight: 'normal', fontSize: '12px' }}>
         © 603.nu 2016
       </NavItem>
     </Toolbar>

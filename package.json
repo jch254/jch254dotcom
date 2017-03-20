@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "jch254.com source code",
   "scripts": {
-    "build": "static-react components/App.js > dist/index.html"
+    "build": "static-react components/App.js > dist/index.html",
+    "lint": "eslint components || exit 0"
   },
   "author": "Jordan Hornblow <jordan@jch254.com>",
   "license": "MIT",
@@ -13,21 +14,21 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-inline-environment-variables": "^6.8.0",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-plugin-transform-runtime": "^6.6.0",
-    "babel-preset-latest": "^6.16.0",
-    "babel-preset-react": "^6.5.0",
-    "eslint": "^3.13.1",
-    "eslint-config-airbnb": "13.0.0",
-    "eslint-loader": "^1.6.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.2",
     "react": "^15.0.1",
     "react-geomicons": "^2.0.5",
-    "rebass": "^0.3.3",
+    "rebass": "^0.3.4",
     "reflexbox": "^2.2.3",
     "static-react": "^3.2.0"
   }
