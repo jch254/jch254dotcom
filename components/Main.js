@@ -1,9 +1,9 @@
 import React from 'react';
+import { Flex } from 'reflexbox';
 import {
   Heading,
   HeadingLink,
 } from 'rebass';
-import { Flex } from 'reflexbox';
 
 const Main = () => (
   <Flex column align="center" justify="center" style={{ flex: '1 0 auto' }} >

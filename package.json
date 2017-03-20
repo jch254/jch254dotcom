@@ -31,5 +31,8 @@
     "rebass": "^0.3.4",
     "reflexbox": "^2.2.3",
     "static-react": "^3.2.0"
+  },
+  "dependencies": {
+    "moment": "^2.18.0"
   }
 }
