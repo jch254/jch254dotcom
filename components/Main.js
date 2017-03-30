@@ -6,18 +6,24 @@ import {
 } from 'rebass';
 
 const Main = () => (
-  <Flex column align="center" justify="center" style={{ flex: '1 0 auto' }} >
-    <Heading size={1} style={{ textAlign: 'center' }} big>
+  <Flex column align="center" justify="center" style={{ flex: '1 0 auto', textAlign: 'center' }} >
+    <Heading size={1} big>
       Jordan Hornblow
     </Heading>
     <Flex>
-      <HeadingLink size={2} style={{ textAlign: 'center' }} href="./JordanHornblow-Resume.pdf">
-        Resume
+      <HeadingLink size={2} href="https://603.nu">
+        Projects
       </HeadingLink>
-      <Heading size={2} px={1} style={{ textAlign: 'center' }}>
+      <Heading size={2} px={1}>
         |
       </Heading>
-      <HeadingLink size={2} style={{ textAlign: 'center' }} href="mailto:jordan@jch254.com">
+      <HeadingLink size={2} href="./JordanHornblow-Resume.pdf">
+        Resume
+      </HeadingLink>
+      <Heading size={2} px={1}>
+        |
+      </Heading>
+      <HeadingLink size={2} href="mailto:jordan@jch254.com">
         Contact/Hire
       </HeadingLink>
     </Flex>
