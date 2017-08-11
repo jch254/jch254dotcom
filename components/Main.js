@@ -6,7 +6,13 @@ import {
 } from 'rebass';
 
 const Main = () => (
-  <Flex column align="center" justify="center" style={{ flex: '1 0 auto', textAlign: 'center' }} >
+  <Flex
+    column
+    align="center"
+    justify="center"
+    style={{ flex: '1 0 auto', textAlign: 'center' }}
+    className="text-focus-in"
+  >
     <Heading size={1} big>
       Jordan Hornblow
     </Heading>
