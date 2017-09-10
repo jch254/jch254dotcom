@@ -1,7 +1,5 @@
 # [jch254.com](https://jch254.com)
 
-[Bitbucket Pipelines status](https://bitbucket.org/jch254/jch254.com/addon/pipelines/home)
-
 Source code for https://jch254.com.
 
 ## Build
@@ -11,3 +9,7 @@ Source code for https://jch254.com.
 yarn install
 yarn run build
 ```
+
+## Deployment/Infrastructure
+
+Refer to the [/infrastructure](./infrastructure) directory.
