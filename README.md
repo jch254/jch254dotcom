@@ -1,4 +1,4 @@
-# [jch254.com](https://jch254.com)
+# [jch254dotcom](https://jch254.com)
 
 Source code for https://jch254.com.
 
