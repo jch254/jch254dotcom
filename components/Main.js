@@ -17,7 +17,7 @@ const Main = () => (
       Jordan Hornblow
     </Heading>
     <Flex>
-      <HeadingLink size={2} href="http://603.nz">
+      <HeadingLink size={2} href="https://603.nz">
         Projects
       </HeadingLink>
       <Heading size={2} px={1}>
