@@ -35,6 +35,11 @@ variable "source_location" {
   description = "HTTPS URL of CodeCommit repo or S3 bucket to use as project source"
 }
 
+variable "cache_bucket" {
+  description = "S3 bucket to use as build cache, the value must be a valid S3 bucket name/prefix"
+  default     = ""
+}
+
 variable "bucket_name" {
   description = "Name of deployment S3 bucket"
 }
@@ -50,4 +55,20 @@ variable "route53_zone_id" {
 
 variable "acm_arn" {
   description = "ARN of ACM SSL certificate"
+}
+
+variable "redirect_source_dns_name" {
+  description = "DNS Name to redirect from (e.g. source.example.com)"
+}
+
+variable "redirect_destination_dns_name" {
+  description = "DNS name to redirect to (e.g. exampled.com)"
+}
+
+variable "redirect_source_route53_zone_id" {
+  description = "Route 53 Hosted Zone ID for source DNS name"
+}
+
+variable "redirect_source_acm_arn" {
+  description = "ARN of ACM SSL certificate for source DNS name"
 }

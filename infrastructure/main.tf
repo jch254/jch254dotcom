@@ -49,7 +49,7 @@ resource "aws_codebuild_webhook" "codebuild_webhook" {
 }
 
 module "codebuild_project" {
-  source = "github.com/jch254/terraform-modules//codebuild-project?ref=1.0.0"
+  source = "github.com/jch254/terraform-modules//codebuild-project?ref=1.0.4"
 
   name               = "${var.name}"
   codebuild_role_arn = "${aws_iam_role.codebuild_role.arn}"
@@ -61,10 +61,19 @@ module "codebuild_project" {
 }
 
 module "webapp" {
-  source = "github.com/jch254/terraform-modules//web-app?ref=1.0.0"
+  source = "github.com/jch254/terraform-modules//web-app?ref=1.0.4"
 
   bucket_name     = "${var.bucket_name}"
   dns_names       = "${var.dns_names}"
   route53_zone_id = "${var.route53_zone_id}"
   acm_arn         = "${var.acm_arn}"
+}
+
+module "webapp-redirect" {
+  source = "github.com/jch254/terraform-modules//web-app-redirect?ref=1.0.4"
+
+  source_dns_name      = "${var.redirect_source_dns_name}"
+  destination_dns_name = "${var.redirect_destination_dns_name}"
+  route53_zone_id      = "${var.redirect_source_route53_zone_id}"
+  acm_arn              = "${var.redirect_source_acm_arn}"
 }

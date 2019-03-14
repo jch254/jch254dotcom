@@ -11,10 +11,15 @@ env:
     TF_VAR_build_docker_tag: "latest"
     TF_VAR_buildspec: "buildspec.yml"
     TF_VAR_source_location: "https://github.com/jch254/jch254dotcom.git"
+    TF_VAR_cache_bucket: "603-codebuild-cache/jch254dotcom"
     TF_VAR_bucket_name: "jch254.com"
     TF_VAR_dns_names: '["jch254.com"]'
     TF_VAR_route53_zone_id: "Z2ULIITPQOWD9C"
-    TF_VAR_acm_arn: "arn:aws:acm:us-east-1:982898479788:certificate/3ea752e5-a651-4f15-97da-adc36bfa3702"
+    TF_VAR_acm_arn: "arn:aws:acm:us-east-1:982898479788:certificate/cd5a32de-5de4-49e2-b006-356af3684d3d"
+    TF_VAR_redirect_source_dns_name: "jch254.nz"
+    TF_VAR_redirect_destination_dns_name: "jch254.com"
+    TF_VAR_redirect_source_route53_zone_id: "Z1ZF4IERKR5OW9"
+    TF_VAR_redirect_source_acm_arn: "arn:aws:acm:us-east-1:982898479788:certificate/96c2ceed-5488-47e8-9843-f1cff5ca169e"
     REMOTE_STATE_BUCKET: "603-terraform-remote-state"
   parameter-store:
     GA_ID: "/jch254dotcom/ga-id"
@@ -31,3 +36,9 @@ phases:
       - ./infrastructure/build-artifacts.bash
       - ./infrastructure/deploy-infrastructure.bash
       - ./infrastructure/upload-artifacts.bash
+
+cache:
+   paths:
+     - 'infrastructure/.terraform/modules/**/*'
+     - 'infrastructure/.terraform/plugins/**/*'
+     - '/usr/local/share/.cache/yarn/v1/**/*'
