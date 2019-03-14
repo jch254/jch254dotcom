@@ -58,6 +58,7 @@ module "codebuild_project" {
   source_type        = "${var.source_type}"
   buildspec          = "${var.buildspec}"
   source_location    = "${var.source_location}"
+  cache_bucket       = "${var.cache_bucket}"
 }
 
 module "webapp" {
