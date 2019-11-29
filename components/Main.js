@@ -28,7 +28,7 @@ const Main = () => (
       </HeadingLink>
     </Flex>
     <Flex style={{ width: '100%' }}>
-      <HeadingLink size={2} href="./JordanHornblow-Resume.pdf" style={{ flex: 1, textAlign: 'right' }}>
+      <HeadingLink size={2} href="/JordanHornblow-Resume.pdf" style={{ flex: 1, textAlign: 'right' }}>
         Resume
       </HeadingLink>
       <Heading size={2} px={1}>
