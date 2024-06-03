@@ -62,14 +62,14 @@ module "codebuild_project" {
   cache_bucket = var.cache_bucket
 }
 
-module "webapp" {
-  source = "github.com/jch254/terraform-modules//web-app?ref=1.0.5"
+# module "webapp" {
+#   source = "github.com/jch254/terraform-modules//web-app?ref=1.0.5"
 
-  bucket_name = var.bucket_name
-  dns_names = var.dns_names
-  route53_zone_id = var.route53_zone_id
-  acm_arn = var.acm_arn
-}
+#   bucket_name = var.bucket_name
+#   dns_names = var.dns_names
+#   route53_zone_id = var.route53_zone_id
+#   acm_arn = var.acm_arn
+# }
 
 module "webapp-redirect" {
   source = "github.com/jch254/terraform-modules//web-app-redirect?ref=1.0.5"
