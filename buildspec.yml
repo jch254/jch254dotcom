@@ -35,10 +35,10 @@ phases:
     commands:
       - ./infrastructure/build-artifacts.bash
       - ./infrastructure/deploy-infrastructure.bash
-      - ./infrastructure/upload-artifacts.bash
+      # - ./infrastructure/upload-artifacts.bash
 
 cache:
-   paths:
-     - 'infrastructure/.terraform/modules/**/*'
-     - 'infrastructure/.terraform/plugins/**/*'
-     - '/usr/local/share/.cache/yarn/v1/**/*'
+  paths:
+    - "infrastructure/.terraform/modules/**/*"
+    - "infrastructure/.terraform/plugins/**/*"
+    - "/usr/local/share/.cache/yarn/v1/**/*"
