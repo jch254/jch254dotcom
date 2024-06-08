@@ -1,6 +1,6 @@
-# [jch254dotcom](https://jch254.com)
+# jch254dotcom | jch254dotnz
 
-Source code for <https://jch254.com>.
+Source code for previous version of <https://jch254.com> and <https://jch254.nz> - now powered by [Fingertip](https://fingertip.com).
 
 ## Build
 
