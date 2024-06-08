@@ -71,11 +71,11 @@ module "codebuild_project" {
 #   acm_arn = var.acm_arn
 # }
 
-module "webapp-redirect" {
-  source = "github.com/jch254/terraform-modules//web-app-redirect?ref=1.0.5"
+# module "webapp-redirect" {
+#   source = "github.com/jch254/terraform-modules//web-app-redirect?ref=1.0.5"
 
-  source_dns_name = var.redirect_source_dns_name
-  destination_dns_name = var.redirect_destination_dns_name
-  route53_zone_id = var.redirect_source_route53_zone_id
-  acm_arn = var.redirect_source_acm_arn
-}
+#   source_dns_name = var.redirect_source_dns_name
+#   destination_dns_name = var.redirect_destination_dns_name
+#   route53_zone_id = var.redirect_source_route53_zone_id
+#   acm_arn = var.redirect_source_acm_arn
+# }
